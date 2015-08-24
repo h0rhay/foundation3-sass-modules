@@ -1,0 +1,47 @@
+
+$desktop-width: 1024px;
+$tablet-width: 768px;
+$mobile-width: 670px;
+$header-image-width: 1400px;
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: #{$mobile-width}) {
+    @content;
+  }
+}
+
+@mixin header-image {
+  @media (max-width: #{$header-image-width}) {
+    @content;
+  }
+}
+
+
+/*//////////////////
+// Usage
+//////////////////*/
+
+/*p {
+  font-size: 16px;
+
+  @include tablet {
+    font-size: 18px;
+  }
+
+  @include desktop {
+    font-size: 20px;
+  }
+}*/
+

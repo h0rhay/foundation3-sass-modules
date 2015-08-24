@@ -1,0 +1,78 @@
+body {
+	min-width: $large-up-width;
+	
+	/* --------------------------------------------
+	:: COMMON 
+	-------------------------------------------- */
+	
+	.heading {
+		font-size: 48px;
+	}
+
+	h2.heading{
+		font-size:24px;
+		@include mobile{
+			font-size:18px;
+		}
+	}
+
+	.breadcrumbs {
+	a, span{
+		font-size:18px;
+		}
+	}
+	
+	a.button {
+		margin-bottom: 0;
+		width: 46%;
+	}
+
+	.slickSlide[data-template="default"] {
+		
+		.columns {
+			min-width: 800px;
+		}
+	}
+
+	.slickSlideContent a.button {
+		width: auto;
+	}
+
+	#site-menu,
+	.menuToggle {
+		display: none!important;
+	}
+
+	/* --------------------------------------------
+	:: BOXED 
+	-------------------------------------------- */
+	
+	.boxed {
+
+		&.six {
+			margin-bottom: 120px;
+
+			&:first-child {
+				margin-right: 2%;
+			}
+		}
+	}
+
+
+	/* --------------------------------------------
+	:: MAIN HEADLINE SECTION 
+	-------------------------------------------- */
+	
+	.mainHeadline {
+
+		.venue {
+			font-family: Oswald;
+			font-size: 24px;
+			text-transform: uppercase;
+		}
+	}
+}
+
+.bxslider_container img:hover {
+	z-index: -1;
+}

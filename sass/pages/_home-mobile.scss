@@ -1,0 +1,334 @@
+html,
+body {
+	min-width:0;
+}
+
+body {
+	background-color: #1a1a1a;
+	min-width: 0;
+
+	.breadcrumbs {
+	a, span{
+		font-size:12px;
+		}
+	}
+
+	.heading{
+		font-size:30px;
+	}
+	
+	/* --------------------------------------------
+	:: COMMON 
+	-------------------------------------------- */
+
+	.row:not(.bottomHeader):not(.slickSlideContent):not(.terms) {
+		background-color: #000;
+		margin: 0;
+	}	
+
+	.columns {
+		margin-bottom: 0;
+		padding: 25px;
+	}
+
+	.button {
+		width: 270px;
+	}
+
+	.heading {
+		min-width: 0!important;
+	}
+
+
+	/* --------------------------------------------
+	:: SLICKED CAROUSEL 
+	-------------------------------------------- */
+
+	.slicked {
+		background-color: #000;
+		height: 100%;
+		margin-top: -90px;
+		min-height: 600px;
+		min-width: 0;
+		width: 100%;
+
+		.slick-next,
+		.slick-prev {
+			display: none!important;
+		}
+
+		.slick-dots {
+	  		top: 580px;
+		}
+
+		.slickSlideContent {
+			height: 100%;
+
+			.columns {
+				text-align: center;
+			}
+
+			& > .columns {
+				height: 100%;
+			}
+
+			.heading {
+				margin-bottom: 35px;
+				min-width: 0;
+			}
+		}
+
+		.slickSlide {
+			height: 665px;
+			margin-top: -25px;
+
+			.youtube {
+				background: none!important;
+				background-color: transparent!important;
+				width: auto!important;
+			}
+				
+			.heading {
+				margin-left: auto;
+				margin-right: auto;
+				max-width: 385px;
+				
+				br {
+					display: none;
+				}
+			}
+
+			.bgSlickSlide {
+				&.bg-desktop {
+					display: none;
+				}
+
+				&.bg-mobile {
+					display: block;
+				}
+			}
+		}
+
+		.slickSlide[data-template="default"]{
+			// background-image: url(/images/home/bg/bg1-mob.jpg);
+			// background-position: center top;
+			padding-top: 280px;
+
+			.columns {
+				min-width: 0;
+			}
+		}
+
+		.slickSlide[data-template="video"]{
+			// background-image: url(/images/home/bg/bg2-mob.jpg);
+			// background-position: center top;
+			padding-top: 0px;
+
+			.videoWrap {
+				background-color: transparent;
+
+				.columns {
+					bottom: 50px;
+					left: 0;
+					margin-left: 0;
+					width: 100%!important;
+				}
+
+				img {
+					display: none;
+				}
+			}
+		}
+		.slickSlide[data-template="right"]{
+			// background-image: url(/images/home/bg/bg3-mob.jpg);
+			// background-position: center top;
+			padding-top: 230px;
+		}
+
+	}
+
+
+	/* --------------------------------------------
+	:: MAIN HEADLINE SECTION 
+	-------------------------------------------- */
+
+	.mainHeadline {
+		margin-top: 0;
+		padding-top: 25px;
+	
+	.venue {
+			color: #fff;
+		}
+
+		.note {
+			display: none;
+		}
+
+		.countdown {
+			margin-bottom: 40px;
+			min-width: 0;
+
+			span {
+					font-size: 48px;
+			}
+		}
+	}
+
+
+	/* --------------------------------------------
+	:: BOXED 
+	-------------------------------------------- */
+
+	.boxed {
+		margin-top: 30px!important;
+		margin-bottom: 30px!important;
+
+		&[data-template="awesomeCars"],
+		&[data-template="bestDrivers"] {
+			background-image: linear-gradient(135deg, rgba(30, 87, 153, 0) 60%, rgba(255, 255, 255, 0.10) 100%);
+			padding: 0;
+
+			.boxedContent {
+				height: 100%;
+				position: relative;
+			}
+
+			.backgroundImg {
+				background-size: 93% auto!important;
+			}
+
+			.button {
+				position: absolute;
+				bottom: 25px;
+				left: 50%;
+				width: 270px;
+				margin-left: -135px;
+			}
+		}
+
+		&[data-template="awesomeCars"]{
+			height: 365px;
+		}
+		
+		&[data-template="bestDrivers"] {
+			height:  385px;
+
+		  .backgroundImg {
+		  	background-position: center;
+		  }
+		}
+
+		&[data-template="galleries"],
+		&[data-template="history"] {
+			height:  373px;
+		}
+
+		&[data-template="galleries"] {
+			.backgroundImg {
+				// background-position: right bottom!important;
+			}
+		}
+
+		&.four {
+			 margin-right: 0!important;
+			
+			h3 {
+				font-size: 16px;
+			}
+
+			.heading {
+				font-size: 24px;
+			}
+		}
+	}
+
+
+	/* --------------------------------------------
+	:: FOOTER 
+	-------------------------------------------- */
+
+	footer.row {
+		background-color: #1a1a1a!important;
+		padding-top: 35px;
+
+		.quicklinkCol:not(.follow),
+		#footerLinks {
+			display: none;
+		}
+
+		.quicklinkCol.follow {
+			margin-bottom: 0;
+			text-align: center;
+			width: 100%;
+
+			span {
+				display: block;
+			}
+
+			ul {
+				display: inline-block;
+			}
+		}
+
+		.terms {
+			background-color: transparent; 
+			margin: 15px 0 0;
+			text-align: center;
+
+			.columns {
+				padding-top: 0;
+			}
+
+			a {
+				display: block;
+				font-size: 14px;
+				margin-bottom: 5px;
+			}
+		}
+	}
+
+/*----------------------------------------------
+:: Partners
+---------------------------------------------- */
+
+	.partners {
+		height: auto;
+
+		ul {
+			margin: 0 auto;
+			width: 90%;
+		}
+	}
+
+	#logosContainer #logos .logoTable {
+		text-align: center;
+
+		li {
+			display: inline-block;
+			float: none;
+			height: 50px;
+		}
+	}
+}
+
+
+
+
+.tintup {
+	padding-top: 25px;
+	div {
+		height: 100%;
+		width: 100%;
+		overflow: auto;
+	}
+}
+
+.advertSlidesWrapper {
+	overflow: hidden;
+}
+
+* { -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-tap-highlight-color: transparent;}
+*:focus {
+	outline: 0;
+}
+

@@ -1,0 +1,46 @@
+
+/* Pagination ---------------------- */
+ul.pagination {
+  display: block;
+  height: 24px;
+  margin-left: -5px;
+}
+ul.pagination li {
+  float: left;
+  display: block;
+  height: 24px;
+  color: #999;
+  font-size: 14px;
+  margin-left: 5px;
+}
+ul.pagination li a {
+  display: block;
+  padding: 1px 7px 1px;
+  color: #555;
+}
+ul.pagination li:hover a, ul.pagination li a:focus {
+  background: #e6e6e6;
+}
+ul.pagination li.unavailable a {
+  cursor: default;
+  color: #999;
+}
+ul.pagination li.unavailable:hover a, ul.pagination li.unavailable a:focus {
+  background: transparent;
+}
+ul.pagination li.current a {
+  background: #2ba6cb;
+  color: white;
+  font-weight: bold;
+  cursor: default;
+}
+ul.pagination li.current a:hover, ul.pagination li.current a:focus {
+  background: #2ba6cb;
+}
+div.pagination-centered {
+  text-align: center;
+}
+div.pagination-centered ul > li {
+  float: none;
+  display: inline-block;
+}

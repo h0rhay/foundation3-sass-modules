@@ -1,0 +1,50 @@
+
+
+.innerPageHeaderImage{
+	height: 60vh;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    margin-top: -10%;
+	margin-bottom:$measure;
+    position: relative;
+	background-size: cover;
+	@include mobile{
+		margin-top: -30%;
+		margin-bottom:$measure / 2;
+	}
+	.innerPageHeader{
+		display:table;
+		width: 100%;
+		height: 100%;
+		&:before{
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background-color: rgba(0,0,0,0.2);
+			box-shadow: inset 0 200px 180px 20px rgba(0,0,0,0.3);
+		}
+		> div{
+			padding-top:$measure*2;
+			text-align:center;
+		}
+	}
+}
+
+.headerImageTop{
+	.innerPageHeaderImage{
+		background-position: 50% 0;
+	}
+}
+
+.headerImageBottom{
+	.innerPageHeaderImage{
+		background-position: 50% 100%;
+	}
+}
+
+.innerPageBreadC, .innerPageMainHeading {
+	width:100%;
+}
